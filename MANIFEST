@@ -19,3 +19,6 @@ t/release-pod-syntax.t
 test/file.txt
 test/key1.pub
 test/key2.pub
+test/pubring.gpg
+test/secring.gpg
+test/trustdb.gpg

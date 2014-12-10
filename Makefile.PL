@@ -22,19 +22,21 @@ my %WriteMakefileArgs = (
   "NAME" => "AnyEvent::GnuPG",
   "PREREQ_PM" => {
     "AnyEvent" => 0,
-    "AnyEvent::Proc" => "0.102",
+    "AnyEvent::Proc" => "0.104",
+    "Async::Chain" => 0,
     "Carp" => 0,
     "Email::Address" => 0,
     "Exporter" => 0,
+    "Try::Tiny" => 0,
     "constant" => 0,
     "strict" => 0,
     "warnings" => 0
   },
   "TEST_REQUIRES" => {
-    "Test::More" => 0,
-    "Try::Tiny" => 0
+    "Env::Path" => 0,
+    "Test::More" => 0
   },
-  "VERSION" => "1.000",
+  "VERSION" => "1.001",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -43,9 +45,11 @@ my %WriteMakefileArgs = (
 
 my %FallbackPrereqs = (
   "AnyEvent" => 0,
-  "AnyEvent::Proc" => "0.102",
+  "AnyEvent::Proc" => "0.104",
+  "Async::Chain" => 0,
   "Carp" => 0,
   "Email::Address" => 0,
+  "Env::Path" => 0,
   "Exporter" => 0,
   "ExtUtils::MakeMaker" => 0,
   "Test::More" => 0,

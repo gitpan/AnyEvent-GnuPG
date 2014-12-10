@@ -4,8 +4,8 @@ author:
   - 'Francis J. Lacoste <francis.lacoste@Contre.COM>'
   - 'David Zurborg <zurborg@cpan.org>'
 build_requires:
+  Env::Path: '0'
   Test::More: '0'
-  Try::Tiny: '0'
   perl: '5.006'
 configure_requires:
   ExtUtils::MakeMaker: '0'
@@ -19,10 +19,12 @@ meta-spec:
 name: AnyEvent-GnuPG
 requires:
   AnyEvent: '0'
-  AnyEvent::Proc: '0.102'
+  AnyEvent::Proc: '0.104'
+  Async::Chain: '0'
   Carp: '0'
   Email::Address: '0'
   Exporter: '0'
+  Try::Tiny: '0'
   constant: '0'
   perl: '5.006'
   strict: '0'
@@ -31,7 +33,7 @@ resources:
   bugtracker: https://github.com/zurborg/libanyevent-gnupg-perl/issues
   homepage: https://github.com/zurborg/libanyevent-gnupg-perl
   repository: https://github.com/zurborg/libanyevent-gnupg-perl.git
-version: '1.000'
+version: '1.001'
 x_contributors:
   - 'David Zurborg <port@david-zurb.org>'
   - 'Francis J. Lacoste <frajulac@contre.com>'

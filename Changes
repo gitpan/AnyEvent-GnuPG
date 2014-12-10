@@ -1,13 +1,26 @@
 Revision history for GnuPG
 
+1.001 2014-12-10
+ - improve test
+ - satisfy perlcritic
+ - more documentation
+ - add method for getting gpg version
+ - abort when ttl exceeded
+ - increase ttl to 10min
+ - tidy up code
+
 1.000 2014-12-06
  - merge ChangeLog with NEWS to Changes
  - tidy up code (Perl::Tidy)
  - remove spec file
 
  [API CHANGES]
- - remove gpgmailtunl
- - use AnyEvent::Proc
+
+ [BUG FIXES]
+
+ [DOCUMENTATION]
+
+ [ENHANCEMENTS]
 
 0.190 2014-12-03
  - change version format
@@ -153,8 +166,8 @@ Revision history for GnuPG
    EOF. (run_gnupg): Check for valid file descriptor when using file handle
    reference in input and output redirection. (version): Updated to version
    0.03
- - test.pl:	       Added tests for tied file handle operations. Changed
-   output format of tests.
+ - test.pl:		  Added tests for tied file handle operations.
+   Changed output format of tests.
  - GnuPG/Tie/Decrypt.pm: Added encryption on a tied filehandle.
  - GnuPG/Tie/Encrypt.pm: Added decryption on a tied filehandle.
  - GnuPG/Tie.pm:       Added abstract implementation for tied filehandle
